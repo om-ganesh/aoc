@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "aoc2020", "aoc2020.pyproj", "{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85BBAA6A-7F94-4E0E-B744-89B5454519D6}
+	EndGlobalSection
+EndGlobal
