@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aoc2020cs", "aoc2020cs\aoc2020cs.csproj", "{2DAA782C-C4C8-4AD3-9B1C-15805115E3B1}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "aoc2020", "aoc2020.pyproj", "{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "aoc2020", "aoc2020py\aoc2020.pyproj", "{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aoc2020cs", "aoc2020cs\aoc2020cs.csproj", "{2DAA782C-C4C8-4AD3-9B1C-15805115E3B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,12 +13,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DAA782C-C4C8-4AD3-9B1C-15805115E3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2DAA782C-C4C8-4AD3-9B1C-15805115E3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DAA782C-C4C8-4AD3-9B1C-15805115E3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DAA782C-C4C8-4AD3-9B1C-15805115E3B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

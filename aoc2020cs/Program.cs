@@ -12,7 +12,7 @@ namespace aoc2020cs
         {
             Console.WriteLine("Welcome to AOC 2020");
 
-            IProblem problem = new Day1SumTo2020();
+            IProblem problem = new Day1ReportRepair();
             problem.Execute();
 
             Console.ReadLine();

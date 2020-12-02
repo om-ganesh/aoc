@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace aoc2020cs
 {
-    class Day1SumTo2020: IProblem
+    class Day1ReportRepair: IProblem
     {
         List<int> data = new List<int>();
 
-        public Day1SumTo2020()
+        public Day1ReportRepair()
         {
             data.AddRange(new int[]{1721, 979, 366, 299, 675, 1456 });
         }
