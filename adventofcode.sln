@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aoc2020cs", "aoc2020cs\aoc2
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "aoc2020", "aoc2020py\aoc2020.pyproj", "{5D7CE242-71E9-45A4-AA5A-748C64DFDBED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AEEF0C15-E364-4EE3-BF23-60EC399E449B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

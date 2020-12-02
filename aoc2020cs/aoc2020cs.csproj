@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Day1ReportRepair.cs" />
+    <Compile Include="Day2PasswordPhilosophy.cs" />
     <Compile Include="IProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
