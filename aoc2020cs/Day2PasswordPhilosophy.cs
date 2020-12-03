@@ -21,10 +21,12 @@ namespace aoc2020cs
         }
         public void Execute()
         {
-            data = FileReader.ReadAllPasswordData("passwords.txt");
+            data = FileReader.ReadAllPasswordData("day2-passwords.txt");
+            
             var result1 = GetValidPasswordCount(data);
             var result2 = GetNewValidPasswordCount(data);
-            Console.WriteLine($"The first answer is {result1} and the second answer is {result2}");
+            
+            Console.WriteLine($"Day2:: The first answer is {result1} and the second answer is {result2}");
         }
 
         /// <summary>

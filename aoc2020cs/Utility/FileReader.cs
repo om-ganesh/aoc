@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace aoc2020cs.Utility
 {
+    // https://adventofcode.com/2020/day/x/input
     class FileReader
     {
+        readonly static string ROOT_PATH = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+        const string DATA_PATH = "data";
+        
         public static List<int> ReadAllLinesOfNumbers(string filename)
         {
-            var fullPath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "data", "day1", filename);
+            var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, filename);
             return File.ReadLines(fullPath).Select(line => Convert.ToInt32(line)).ToList();
         }
 
@@ -19,7 +23,7 @@ namespace aoc2020cs.Utility
         {
             List<Tuple<int, int, char, string>> data = new List<Tuple<int, int, char, string>>();
 
-            var fullPath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "data", "day1", filename);
+            var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, filename);
             foreach(var line in File.ReadAllLines(fullPath))
             {
                 var inputs = line.Split(' ');
@@ -33,6 +37,21 @@ namespace aoc2020cs.Utility
                 string password = inputs[2];
                 
                 data.Add(new Tuple<int, int, char, string>(minCount, maxCount, character, password));
+            }
+            return data;
+        }
+
+        public static List<string> GetMatrixPattern(string filename)
+        {
+            var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, filename);
+            var lines = File.ReadAllLines(fullPath);
+            //var width = lines[0].Length;
+            //var height = lines.Count();
+
+            List<string> data = new List<string>();
+            for (int i = 0; i < lines.Length; i++)
+            {
+                data.Add(lines[i]);
             }
             return data;
         }
