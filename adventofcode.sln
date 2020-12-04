@@ -11,7 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		data\day1-2020.txt = data\day1-2020.txt
 		data\day2-passwords.txt = data\day2-passwords.txt
-		data\day3-problem.txt = data\day3-problem.txt
+		data\day3-problemtrain.txt = data\day3-problemtrain.txt
+		data\day3-toboggantrajectory.txt = data\day3-toboggantrajectory.txt
+		data\day4-passportbatch-train.txt = data\day4-passportbatch-train.txt
+		data\day4-passportbatch.txt = data\day4-passportbatch.txt
 		README.md = README.md
 	EndProjectSection
 EndProject

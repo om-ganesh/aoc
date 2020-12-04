@@ -12,7 +12,7 @@ namespace aoc2020cs
         {
             Console.WriteLine("Welcome to AOC 2020");
 
-            IProblem problem = new Day3TobogganTrajectory();
+            IProblem problem = new Day4PassportProcessing();
             problem.Execute();
 
             Console.ReadLine();

@@ -55,5 +55,38 @@ namespace aoc2020cs.Utility
             }
             return data;
         }
+
+        public static List<string> GetPassportFiles(string fileName)
+        {
+            var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, fileName);
+            List<string> data = new List<string>();
+
+            var lines = File.ReadAllLines(fullPath);
+            StringBuilder input = new StringBuilder();
+
+            foreach (var line in lines)
+            {
+                if (!string.IsNullOrWhiteSpace(line))
+                {
+                    if (input.Length == 0)
+                    {
+                        input.Append(line);
+                    }
+                    else
+                    {
+                        input.Append(" " + line);
+                    }
+                }
+                else
+                {
+                    data.Add(input.ToString());
+                    input.Clear();
+                }
+            }
+            //Add the last string
+            data.Add(input.ToString());
+
+            return data;
+        }
     }
 }

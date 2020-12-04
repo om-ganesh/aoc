@@ -12,8 +12,9 @@ Solution: [Day2PasswordPhilosophy.cs](aoc2020cs/Day2PasswordPhilosophy.cs)
 Input: [day3-problem.txt](data/day3-problem.txt)  
 Solution: [Day3TobogganTrajectory.cs](aoc2020cs/Day3TobogganTrajectory.cs)
 
-
-
+### DAY4: [Passport Processing](https://adventofcode.com/2020/day/4)
+Input: [day4-passportProcessing.txt](data/day4-passportProcessing.txt)  
+Solution: [Day4PassportProcessing.cs](aoc2020cs/Day4PassportProcessing.cs)
 
 ### Related Resources:
 https://www.reddit.com/r/adventofcode/

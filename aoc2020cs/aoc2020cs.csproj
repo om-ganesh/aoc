@@ -46,6 +46,7 @@
     <Compile Include="Day1ReportRepair.cs" />
     <Compile Include="Day2PasswordPhilosophy.cs" />
     <Compile Include="Day3TobogganTrajectory.cs" />
+    <Compile Include="Day4PassportProcessing.cs" />
     <Compile Include="IProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
