@@ -47,9 +47,11 @@
     <Compile Include="Day2PasswordPhilosophy.cs" />
     <Compile Include="Day3TobogganTrajectory.cs" />
     <Compile Include="Day4PassportProcessing.cs" />
+    <Compile Include="Day5BinaryBoarding.cs" />
     <Compile Include="IProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\DownloadRemoteData.cs" />
     <Compile Include="Utility\FileReader.cs" />
   </ItemGroup>
   <ItemGroup>

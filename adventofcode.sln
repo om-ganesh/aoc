@@ -9,13 +9,19 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "aoc2020", "aoc2020py\aoc202
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AEEF0C15-E364-4EE3-BF23-60EC399E449B}"
 	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{8C4CA6FD-C29A-4328-973C-6585122CEA54}"
+	ProjectSection(SolutionItems) = preProject
 		data\day1-2020.txt = data\day1-2020.txt
 		data\day2-passwords.txt = data\day2-passwords.txt
 		data\day3-problemtrain.txt = data\day3-problemtrain.txt
 		data\day3-toboggantrajectory.txt = data\day3-toboggantrajectory.txt
 		data\day4-passportbatch-train.txt = data\day4-passportbatch-train.txt
 		data\day4-passportbatch.txt = data\day4-passportbatch.txt
-		README.md = README.md
+		data\day5-binaryboarding-train.txt = data\day5-binaryboarding-train.txt
+		data\day5-binaryboarding.txt = data\day5-binaryboarding.txt
 	EndProjectSection
 EndProject
 Global
@@ -33,6 +39,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C4CA6FD-C29A-4328-973C-6585122CEA54} = {AEEF0C15-E364-4EE3-BF23-60EC399E449B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {85BBAA6A-7F94-4E0E-B744-89B5454519D6}

@@ -41,7 +41,7 @@ namespace aoc2020cs.Utility
             return data;
         }
 
-        public static List<string> GetMatrixPattern(string filename)
+        public static List<string> ReadStringInputs(string filename)
         {
             var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, filename);
             var lines = File.ReadAllLines(fullPath);

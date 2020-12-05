@@ -14,7 +14,7 @@ namespace aoc2020cs
 
         public void Execute()
         {
-            data = FileReader.GetMatrixPattern("day3-problem.txt");
+            data = FileReader.ReadStringInputs("day3-problem.txt");
 
             var result1 = FindSolution1(data);
             var result2 = FindSolution2(data);
