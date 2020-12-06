@@ -12,7 +12,7 @@ namespace aoc2020cs
         {
             Console.WriteLine("Welcome to AOC 2020");
 
-            IProblem problem = new Day5BinaryBoarding();
+            IProblem problem = new DayXProblem();
             problem.Execute();
 
             Console.ReadLine();

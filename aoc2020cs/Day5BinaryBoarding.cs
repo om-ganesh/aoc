@@ -15,6 +15,10 @@ namespace aoc2020cs
         {
             data = FileReader.ReadStringInputs("day5-binaryboarding.txt");
             var seatList = GetAllSeatList(data);
+            //Show all the seats
+            //var seatIds = seatList.ConvertAll(seat => 8 * seat.row + seat.column).ToArray();
+            //Array.Sort(seatIds);
+            //Console.WriteLine(string.Join(",", seatIds));
 
             // Problem1
             Console.WriteLine($"Day5:: Total boarding passes:: {seatList.Count}");
@@ -59,7 +63,7 @@ namespace aoc2020cs
         private int FindMySeatId(List<(int row, int column)> seatList)
         {
             var seatIds = seatList.ConvertAll(seat => 8 * seat.row + seat.column).ToArray();
-
+            
             //Method1: Using Hash
             HashSet<int> hash = new HashSet<int>(seatIds);
             List<int> probableSeats = new List<int>();

@@ -1,0 +1,4 @@
+{
+	"session-cookie": "53616c7465645f5fa5648376ca63f429c79c0d879f17bc717ca442130c979b114702d5d3915f5699ba13fd970cd13e85",
+	"output": "day{{.Day}}.txt"
+}
