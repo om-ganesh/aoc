@@ -21,7 +21,7 @@ namespace aoc2020cs
         }
         public void Execute()
         {
-            data = FileReader.ReadAllPasswordData("day2-passwords.txt");
+            data = ReadAllPasswordData("day2.txt");
             
             var result1 = GetValidPasswordCount(data);
             var result2 = GetNewValidPasswordCount(data);
@@ -109,6 +109,27 @@ namespace aoc2020cs
             }
 
             return result;
+        }
+
+
+        private List<Tuple<int, int, char, string>> ReadAllPasswordData(string fileName)
+        {
+            List<Tuple<int, int, char, string>> data = new List<Tuple<int, int, char, string>>();
+            foreach (var line in FileReader.GetAllLines(fileName))
+            {
+                var inputs = line.Split(' ');
+
+                var count = inputs[0].Split('-');
+                int minCount = Convert.ToInt32(count[0]);
+                int maxCount = Convert.ToInt32(count[1]);
+
+                char character = inputs[1][0];
+
+                string password = inputs[2];
+
+                data.Add(new Tuple<int, int, char, string>(minCount, maxCount, character, password));
+            }
+            return data;
         }
     }
 }

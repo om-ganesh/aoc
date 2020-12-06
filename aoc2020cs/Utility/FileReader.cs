@@ -25,84 +25,20 @@ namespace aoc2020cs.Utility
             RunAocDownloaderToGetData(fileName);
             
             // Step3: Read Lines from file and return
-            return ReadStringInputs(fileName);
+            return GetAllLines(fileName);
         }
 
-        
-        public static List<int> ReadAllLinesOfNumbers(string filename)
-        {
-            var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, filename);
-            return File.ReadLines(fullPath).Select(line => Convert.ToInt32(line)).ToList();
-        }
-
-        public static List<Tuple<int, int, char, string>> ReadAllPasswordData(string filename)
-        {
-            List<Tuple<int, int, char, string>> data = new List<Tuple<int, int, char, string>>();
-
-            var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, filename);
-            foreach(var line in File.ReadAllLines(fullPath))
-            {
-                var inputs = line.Split(' ');
-                
-                var count = inputs[0].Split('-');
-                int minCount = Convert.ToInt32(count[0]);
-                int maxCount = Convert.ToInt32(count[1]);
-                
-                char character = inputs[1][0];
-                
-                string password = inputs[2];
-                
-                data.Add(new Tuple<int, int, char, string>(minCount, maxCount, character, password));
-            }
-            return data;
-        }
-
-        public static List<string> ReadStringInputs(string filename)
-        {
-            var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, filename);
-            var lines = File.ReadAllLines(fullPath);
-
-            List<string> data = new List<string>();
-            for (int i = 0; i < lines.Length; i++)
-            {
-                data.Add(lines[i]);
-            }
-            return data;
-        }
-
-        public static List<string> GetPassportFiles(string fileName)
+        public static List<string> GetAllLines(string fileName)
         {
             var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, fileName);
-            List<string> data = new List<string>();
-
-            var lines = File.ReadAllLines(fullPath);
-            StringBuilder input = new StringBuilder();
-
-            foreach (var line in lines)
-            {
-                if (!string.IsNullOrWhiteSpace(line))
-                {
-                    if (input.Length == 0)
-                    {
-                        input.Append(line);
-                    }
-                    else
-                    {
-                        input.Append(" " + line);
-                    }
-                }
-                else
-                {
-                    data.Add(input.ToString());
-                    input.Clear();
-                }
-            }
-            //Add the last string
-            data.Add(input.ToString());
-
-            return data;
+            return File.ReadAllLines(fullPath).ToList();
         }
 
+        public static List<int> GetAllLinesAsNumbers(string fileName)
+        {
+            var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, fileName);
+            return File.ReadAllLines(fullPath).Select(line => Convert.ToInt32(line)).ToList();
+        }
 
         private static void RunAocDownloaderToGetData(string fileName)
         {
@@ -117,7 +53,7 @@ namespace aoc2020cs.Utility
                     myProcess.StartInfo.UseShellExecute = false;
                     myProcess.StartInfo.FileName = @"C:\Users\subas\go\bin\aocdl.exe";
                     myProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                    myProcess.StartInfo.Arguments = "-output " + fileName;
+                    myProcess.StartInfo.Arguments = "-force -output " + fileName;
                     myProcess.Start();
                     //Use kill method to terminate the process, if it is not self-terminating
                 }
@@ -125,10 +61,6 @@ namespace aoc2020cs.Utility
                 //Move file to data folder
                 Thread.Sleep(2000);
                 var fullPath = Path.Combine(ROOT_PATH, DATA_PATH, fileName);
-                if (File.Exists(fullPath))
-                {
-                    File.Delete(fullPath);
-                }
                 File.Move(fileName, fullPath);
             }
             catch (Exception e)

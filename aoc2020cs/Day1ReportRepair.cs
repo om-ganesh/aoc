@@ -20,7 +20,7 @@ namespace aoc2020cs
         }
         public void Execute()
         {
-            data = FileReader.ReadAllLinesOfNumbers("day1-2020.txt");
+            data = FileReader.GetAllLinesAsNumbers("day1.txt");
             
             var result1 = GetMultiplicationOfTwo(data);
             var result2 = GetMultiplicationOfThree(data);

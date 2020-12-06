@@ -13,7 +13,7 @@ namespace aoc2020cs
 
         public void Execute()
         {
-            data = FileReader.ReadStringInputs("day5-binaryboarding.txt");
+            data = FileReader.GetAllLines("day5.txt");
             var seatList = GetAllSeatList(data);
             //Show all the seats
             //var seatIds = seatList.ConvertAll(seat => 8 * seat.row + seat.column).ToArray();

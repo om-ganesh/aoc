@@ -15,8 +15,7 @@ namespace aoc2020cs
 
         public void Execute()
         {
-            data = FileReader.GetPassportFiles("day4-passportbatch.txt");
-
+            data = GetPassportFiles("day4.txt");
             var result1 = FindSolution1(data);
             var result2 = FindSolution2(result1);
 
@@ -107,6 +106,37 @@ namespace aoc2020cs
             }
 
             return result;
+        }
+
+
+        private List<string> GetPassportFiles(string fileName)
+        {
+            List<string> data = new List<string>();
+
+            StringBuilder input = new StringBuilder();
+            foreach (var line in FileReader.GetAllLines(fileName))
+            {
+                if (!string.IsNullOrWhiteSpace(line))
+                {
+                    if (input.Length == 0)
+                    {
+                        input.Append(line);
+                    }
+                    else
+                    {
+                        input.Append(" " + line);
+                    }
+                }
+                else
+                {
+                    data.Add(input.ToString());
+                    input.Clear();
+                }
+            }
+            //Add the last string
+            data.Add(input.ToString());
+
+            return data;
         }
     }
 }

@@ -14,7 +14,7 @@ namespace aoc2020cs
 
         public void Execute()
         {
-            data = FileReader.ReadStringInputs("day3-problem.txt");
+            data = FileReader.GetAllLines("day3.txt");
 
             var result1 = FindSolution1(data);
             var result2 = FindSolution2(data);
