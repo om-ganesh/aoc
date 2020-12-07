@@ -48,6 +48,8 @@
     <Compile Include="Day3TobogganTrajectory.cs" />
     <Compile Include="Day4PassportProcessing.cs" />
     <Compile Include="Day5BinaryBoarding.cs" />
+    <Compile Include="Day6CustomCustoms.cs" />
+    <Compile Include="HandyHaversacks.cs" />
     <Compile Include="DayXProblem.cs" />
     <Compile Include="IProblem.cs" />
     <Compile Include="Program.cs" />
@@ -57,9 +59,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include=".gitignore" />
   </ItemGroup>

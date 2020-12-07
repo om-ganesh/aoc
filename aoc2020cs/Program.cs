@@ -12,7 +12,7 @@ namespace aoc2020cs
         {
             Console.WriteLine("Welcome to AOC 2020");
 
-            IProblem problem = new DayXProblem();
+            IProblem problem = new HandyHaversacks();
             problem.Execute();
 
             Console.ReadLine();
